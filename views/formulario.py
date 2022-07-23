@@ -12,4 +12,16 @@ def exibir_mensagem(texto):
     print("============================")
     print("\n\n")
 
+def menu():
+    print("[1] - Para cadastrar cliente")
+    print("[2] - para listar todos os clientes")
+    print("[3] - Para sair")
+    opcao = input("Digite a opção: ")
+    return opcao
+
+def cadastro_cliente():
+    nome = input("Informe o Nome:")
+    telefone = input("Informe o Telefone:")
+    cliente = [nome,telefone]
+    return cliente
 
